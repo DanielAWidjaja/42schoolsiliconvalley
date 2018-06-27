@@ -1,51 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_strupcase.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dwidjaja <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/06/25 13:20:25 by dwidjaja          #+#    #+#             */
-/*   Updated: 2018/06/25 23:43:23 by dwidjaja         ###   ########.fr       */
+/*   Created: 2018/06/26 03:21:51 by dwidjaja          #+#    #+#             */
+/*   Updated: 2018/06/26 03:38:23 by dwidjaja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	white_space(char c)
+int		low_case(char c)
 {
-	if (c == '\t' || c == '\n' || c == '\v' ||
-		c == '\f' || c == '\r' || c == ' ')
+	if ('a' <= c && c <= 'z')
 		return (1);
 	return (0);
 }
 
-int	is_digit(char c)
+char	up(char c)
 {
-	if ('0' <= c && c <= '9')
-		return (1);
-	return (0);
+	return (c + 'A' - 'a');
 }
 
-int	ft_atoi(char *str)
+char	*ft_strupcase(char *str)
 {
 	int i;
-	int ret;
-	int sign;
 
 	i = 0;
-	ret = 0;
-	sign = 1;
-	while (!!white_space(str[i]))
-		i++;
-	if (str[i] == '-' || str[i] == '+')
+	while (str[i] != '\0')
 	{
-		if (str[i] == '-')
-			sign = -1;
+		if (low_case(str[i]))
+			str[i] = up(str[i]);
 		i++;
 	}
-	while (!!is_digit(str[i]))
-	{
-		ret *= 10;
-		ret += str[i++] - '0';
-	}
-	return (sign * ret);
+	return (str);
 }
