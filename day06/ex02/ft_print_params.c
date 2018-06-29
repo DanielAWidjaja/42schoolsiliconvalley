@@ -29,6 +29,7 @@ int		main(int argc, char *argv[])
 	int i;
 
 	i = 1;
+	argc = 4;
 	while (argv[i])
 	{
 		ft_putstr(argv[i++]);

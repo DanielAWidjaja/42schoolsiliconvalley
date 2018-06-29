@@ -28,13 +28,11 @@ int		main(int argc, char *argv[])
 {
 	int i;
 
-	while (argv[i])
-		i++;
-	i--;
-	while (i >= 0)
+	i = argc - 1;
+	while (i > 0)
 	{
 		ft_putstr(argv[i--]);
-		ft_putchar('\0');
+		ft_putchar('\n');
 	}
 	return (0);
 }

@@ -6,11 +6,9 @@
 /*   By: dwidjaja <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/27 21:08:04 by dwidjaja          #+#    #+#             */
-/*   Updated: 2018/06/27 21:44:52 by dwidjaja         ###   ########.fr       */
+/*   Updated: 2018/06/27 22:29:31 by dwidjaja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 void	ft_putchar(char c);
 
@@ -47,7 +45,7 @@ int		main(int argc, char *argv[])
 	char			*tmp;
 
 	i = 1;
-	while (argv[i++])
+	while (i++ < argc)
 	{
 		j = 1;
 		while (argv[j + 1])
