@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "ostream": "c",
+        "chrono": "c",
+        "stdio.h": "c"
+    }
+}
