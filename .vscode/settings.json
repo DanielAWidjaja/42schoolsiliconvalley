@@ -2,6 +2,7 @@
     "files.associations": {
         "ostream": "c",
         "chrono": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "ft_list.h": "c"
     }
 }
