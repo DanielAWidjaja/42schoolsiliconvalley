@@ -1,0 +1,1 @@
+cat /etc/passwd | grep -vwE "(#)" | sed g\;n | sed '/^$/d' | cut -f1 -d ':' | rev | sort -r | sed -n -e "${FT_LINE1}, ${FT_LINE2}p" | sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/, /g' | sed -e 's/[^.]$/&./' | tr -d '\n'
