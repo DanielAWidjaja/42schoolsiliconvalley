@@ -3,6 +3,7 @@
         "ostream": "c",
         "chrono": "c",
         "stdio.h": "c",
-        "ft_list.h": "c"
+        "ft_list.h": "c",
+        "bsq.h": "c"
     }
 }
