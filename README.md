@@ -62,6 +62,7 @@ Should be okay, just correct the usage of header file. It's totally working
 
 ## Rush02
 0% kinda messed up.
+nub sih
 
 ## BSQ
 Totally working, just need to change the input and output style.
